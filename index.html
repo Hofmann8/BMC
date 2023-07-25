@@ -1,68 +1,392 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#000000">
-    <meta name="description" content="Web site created using CloudBase Webify">
-    <title>Hello Webify！</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-                'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-                sans-serif;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-        code {
-            font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-                monospace;
-        }
-        .App {
-            text-align: center;
-        }
+<meta charset="utf-8">
+<title>黑魔法学院（凌水院区） - 招新</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="黑魔法学院（凌水院区）欢迎新生加入！">
+<meta name="author" content="黑魔法学院">
+<!-- css -->
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<!-- skin color -->
+<link href="color/default.css" rel="stylesheet">
+<!--[if lt IE 7]>
+	<link href="css/font-awesome-ie7.css" type="text/css" rel="stylesheet">  
+<![endif]-->
 
-        .App-logo {
-            height: 40vmin;
-            pointer-events: none;
-        }
-
-        @media (prefers-reduced-motion: no-preference) {
-            .App-logo {
-                animation: App-logo-spin infinite 20s linear;
-            }
-        }
-
-        .App-header {
-            background-color: #efefef;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            font-size: calc(10px + 2vmin);
-            color: black;
-        }
-
-        .App-link {
-            color: #108ee9;
-        }
-    </style>
+<link rel="shortcut icon" href="img/favicon.ico">
 </head>
-
 <body>
-    <div id="root">
-        <div class="App">
-            <header class="App-header">
-                <img src="https://main.qcloudimg.com/raw/2f3b21706c37e8685efe5c60b26ceb24.png" class="App-logo" alt="logo">
-                <p>Welcome to Webify！</p>
-                <a class="App-link" href="https://webify.cloudbase.net/"
-                    target="_blank" rel="noopener noreferrer">webify.cloudbase.net</a>
-            </header>
+<!-- navbar -->
+<div class="navbar-wrapper">
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<!-- Responsive navbar -->
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+				</a>
+				<h1 class="brand"><a href="index.html" tppabs="#">黑魔法学院（凌水院区）</a></h1>
+				<!-- navigation -->
+				<nav class="pull-right nav-collapse collapse">
+				<ul id="menu-main" class="nav">
+					<li><a title="about" href="#about">学院简介</a></li>
+					<li><a title="majors" href="#majors">专业介绍</a></li>
+					<li><a title="contact" href="#contact">联系我们</a></li>
+				</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Header area -->
+<div id="header-wrapper" class="header-slider">
+	<header class="clearfix">
+	<div class="logo">
+		<img src="img/logo.png" alt="黑魔法学院（凌水院区）" width="400" height="400" />
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="span12">
+				<div id="main-flexslider" class="flexslider">
+					<ul class="slides">
+						<li>
+						<p class="home-slide-content">
+							<strong>欢迎新生加入</strong> 黑魔法学院
+						</p>
+						</li>
+						<li>
+						<p class="home-slide-content">
+							探索无限的 <strong>魔法世界</strong>
+						</p>
+						</li>
+						<li>
+						<p class="home-slide-content">
+							发现自己的 <strong>魔法天赋</strong>
+						</p>
+						</li>
+					</ul>
+				</div>
+				<!-- end slider -->
+			</div>
+		</div>
+	</div>
+	</header>
+</div>
+<!-- spacer section -->
+<section class="spacer green">
+<div class="container">
+	<div class="row">
+		<div class="span6 alignright flyLeft">
+			<blockquote class="large">
+				 在黑魔法学院，你将开启一段神奇的魔法之旅 <cite>黑魔法学院</cite>
+			</blockquote>
+		</div>
+		<div class="span6 aligncenter flyRight">
+			<i class="icon-hat icon-10x">
+				<img src="img/lab.png" alt="黑魔法学院" />
+			</i>
+		</div>
+	</div>
+</div>
+</section>
+<!-- end spacer section -->
+<!-- section: about -->
+<section id="about" class="section">
+<div class="container">
+	<h4>学院简介</h4>
+	<div class="row">
+		<div class="span4 offset1">
+			<div>
+				<h2>探索黑魔法的奥秘</h2>
+				<p>
+					黑魔法学院（凌水院区）是一所致力于黑魔法研究的学府。学院拥有丰富的黑魔法资源和资深的教师团队，致力于培养优秀的黑魔法师。
+				</p>
+			</div>
+		</div>
+		<div class="span6">
+			<div class="aligncenter">
+				<img src="img/简介.jpg" alt="黑魔法学院（凌水院区）" width="400"/>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="span8 offset2">
+			<div class="aligncenter">
+				<blockquote class="large">
+					 在黑魔法学院，你将踏上一段充满惊喜和挑战的学习之旅，释放内心深处的黑魔法力量。<cite>黑魔法学院</cite>
+				</blockquote>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /.container -->
+</section>
+<!-- end section: about -->
+<!-- section: services -->
+<section id="services" class="section orange">
+    <div class="container">
+        <h4>学员素养</h4>
+        <!-- Four columns -->
+        <div class="row">
+            <div class="span3 animated-fast flyIn">
+                <div class="service-box">
+                    <img src="img/icons/laptop.png" alt="" />
+                    <h2>Computer Games</h2>
+                    <p>
+                        黑魔法学院成员在打游戏方面精通各种网游和单机大作
+                    </p>
+                </div>
+            </div>
+            <div class="span3 animated flyIn">
+                <div class="service-box">
+                    <img src="img/icons/lab.png" alt="" />
+                    <h2>Chemical Experiment</h2>
+                    <p>
+                        黑魔法学院依附于大连理工大学张大煜学院，属于三级学科学院，学院成员有基本的化学实验基础
+                    </p>
+                </div>
+            </div>
+            <div class="span3 animated-fast flyIn">
+                <div class="service-box">
+                    <img src="img/icons/camera.png" alt="" />
+                    <h2>Photography</h2>
+                    <p>
+                        黑魔法学院成员拥有独特的生活情趣，喜欢拍摄一些好♂康的
+                    </p>
+                </div>
+            </div>
+            <div class="span3 animated-slow flyIn">
+                <div class="service-box">
+                    <img src="img/icons/basket.png" alt="" />
+                    <h2>Shopping</h2>
+                    <p>
+                        黑魔法学院成员由于整日待在寝室中钻研学问（bushi），所以他们能一次性买很多东西然后一个月不出门
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
+</section>
+<!-- end section: services -->
+<!-- section: team -->
+<section id="about" class="section">
+    <div class="container">
+        <h4>Who We Are</h4>
+        <div class="row">
+            <div class="span4 offset1">
+                <div>
+                    <h2>We live with <strong>creativity</strong></h2>
+                    <p>
+                        在整活方面，黑魔法学院致力于做到世界第一。黑魔法学院在国际上的影响力已经超过大部分整活院校，与我校毕业的川建国同学曾一度控制美国内政，让美国局势整活化。黑魔法学院在全球整活数已超过0，整活事件可绕氢原子半圈。
+                    </p>
+                </div>
+            </div>
+            <div class="span6">
+                <div class="aligncenter">
+                    <img src="img/icons/creativity.png" alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span2 offset1 flyIn">
+                <div class="people">
+                    <img class="team-thumb img-circle" src="doctor1.png" alt="" />
+                    <h3>乔均宁</h3>
+                    <p>
+                        黑魔法学院最高院长
+                    </p>
+                </div>
+            </div>
+            <div class="span2 flyIn">
+                <div class="people">
+                    <img class="team-thumb img-circle" src="doctor2.png" alt="" />
+                    <h3>张炳南</h3>
+                    <p>
+                        抓天马专业首席院士
+                    </p>
+                </div>
+            </div>
+            <div class="span2 flyIn">
+                <div class="people">
+                    <img class="team-thumb img-circle" src="doctor3.jpg" alt="" />
+                    <h3>林凯</h3>
+                    <p>
+                        黑魔法专业首席院士
+                    </p>
+                </div>
+            </div>
+            <div class="span2 flyIn">
+                <div class="people">
+                    <img class="team-thumb img-circle" src="doctor4.png" alt="" />
+                    <h3>金旻序</h3>
+                    <p>
+                        抓蝴蝶专业首席院士
+                    </p>
+                </div>
+            </div>
+            <div class="span2 flyIn">
+                <div class="people">
+                    <img class="team-thumb img-circle" src="doctor5.png" alt="" />
+                    <h3>田思政</h3>
+                    <p>
+                        黑魔法学院形象大使
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</section>
+<!-- end section: team -->
+<!-- spacer section -->
+<!-- section: majors -->
+<section id="majors" class="section orange">
+<div class="container">
+	<h4>专业介绍</h4>
+	<!-- Four columns -->
+	<div class="row">
+		<div class="span3 animated-fast flyIn">
+			<div class="service-box">
+				<img src="img/major1.png" alt="黑魔法" />
+				<h2>黑魔法</h2>
+				<p>
+					黑魔法学院的王牌专业，掌握黑魔法的精髓，利用特定物体吸收光波进行通讯的古老魔法。
+				</p>
+			</div>
+		</div>
+		<div class="span3 animated flyIn">
+			<div class="service-box">
+				<img src="img/major2.png" alt="一二三" />
+				<h2>一二三</h2>
+				<p>
+					通过研究内在矛盾，为第三个目标事物给出黑魔法界认可的答案的哲学向魔法。
+				</p>
+			</div>
+		</div>
+		<div class="span3 animated-fast flyIn">
+			<div class="service-box">
+				<img src="img/major3.png" alt="数马" />
+				<h2>数马</h2>
+				<p>
+					通过分析马群跑动产生的声波进行马匹数量的古老魔法。
+				</p>
+			</div>
+		</div>
+		<div class="span3 animated-slow flyIn">
+			<div class="service-box">
+				<img src="img/major4.png" alt="抓蝴蝶" />
+				<h2>抓蝴蝶</h2>
+				<p>
+					通过分析蝴蝶捕猎者的动作轨迹，推断蝴蝶的数量和状态的自然向魔法。
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+<!-- end section: majors -->
+<!-- section: contact -->
+<section id="contact" class="section green">
+<div class="container">
+	<h4>联系我们</h4>
+	<p>
+		如果你对黑魔法学院（凌水院区）有兴趣，想要加入我们的行列，或者有任何疑问，欢迎联系我们。
+	</p>
+	<div class="blankdivider30">
+	</div>
+	<div class="row">
+		<div class="span12">
+			<div class="cform" id="contact-form">
+				<div id="sendmessage">
+					 您的消息已发送。感谢您的联系！
+				</div>
+				<form action="contact/contact.php" method="post" class="contactForm">
+					<div class="row">
+						<div class="span6">
+							<div class="field your-name">
+								<input type="text" name="your-name" placeholder="您的姓名" class="cform-text" size="40" data-rule="maxlen:2" data-msg="请至少输入两个字符" />
+								<div class="validation">
+								</div>
+							</div>
+							<div class="field your-email">
+								<input type="text" name="your-email" placeholder="您的邮箱" class="cform-text" size="40" data-rule="email" data-msg="请输入正确的邮箱格式" />
+								<div class="validation">
+								</div>
+							</div>
+							<div class="field subject">
+								<input type="text" name="subject" placeholder="主题" class="cform-text" size="40" data-rule="maxlen:4" data-msg="请至少输入四个字符" />
+								<div class="validation">
+								</div>
+							</div>
+						</div>
+						<div class="span6">
+							<div class="field message">
+								<textarea name="message" class="cform-textarea" cols="40" rows="10" data-rule="required" data-msg="请输入您想要说的内容"></textarea>
+								<div class="validation">
+								</div>
+							</div>
+							<input type="submit" value="发送消息" class="btn btn-theme pull-left">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- ./span12 -->
+	</div>
+</div>
+</section>
+<footer>
+<div class="container">
+	<div class="row">
+		<div class="span6 offset3">
+			<ul class="social-networks">
+				<li><a href="#"><i class="icon-circled icon-bgdark icon-instagram icon-2x"></i></a></li>
+				<li><a href="#"><i class="icon-circled icon-bgdark icon-twitter icon-2x"></i></a></li>
+				<li><a href="#"><i class="icon-circled icon-bgdark icon-dribbble icon-2x"></i></a></li>
+				<li><a href="#"><i class="icon-circled icon-bgdark icon-pinterest icon-2x"></i></a></li>
+			</ul>
+			<p class="copyright">
+				Copyright &copy; 2023. All rights reserved. 
+				<a href="#" title="黑魔法学院">黑魔法学院</a>
+			</p>
+		</div>
+	</div>
+</div>
+<!-- ./container -->
+</footer>
+<a href="#" class="scrollup"><i class="icon-angle-up icon-square icon-bgdark icon-2x"></i></a>
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+<!-- nav -->
+<script src="js/jquery.scrollTo.js"></script>
+<script src="js/jquery.nav.js"></script>
+<!-- localScroll -->
+<script src="js/jquery.localscroll-1.2.7-min.js"></script>
+<!-- bootstrap -->
+<script src="js/bootstrap.js"></script>
+<!-- prettyPhoto -->
+<script src="js/jquery.prettyPhoto.js"></script>
+<!-- Works scripts -->
+<script src="js/isotope.js"></script>
+<!-- flexslider -->
+<script src="js/jquery.flexslider.js"></script>
+<!-- inview -->
+<script src="js/inview.js"></script>
+<!-- animation -->
+<script src="js/animate.js"></script>
+<!-- twitter -->
+<script src="js/jquery.tweet.js"></script>
+<!-- contact form -->
+<script src="js/validate.js"></script>
+<!-- custom functions -->
+<script src="js/custom.js"></script>
+<style>
+.copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+</style>
+<div class="copyrights" id="links20210126">
+	Collect from <a href="https://www.dlut.edu.cn/"  title="大连理工大学">大连理工大学</a>
+	<a href="https://www.dlut.edu.cn/" title="大连理工大学">大连理工大学</a>
+</div>
 </body>
-
 </html>
